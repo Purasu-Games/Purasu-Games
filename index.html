@@ -1,24 +1,28 @@
 <!DOCTYPE html>
-<html>
-	<head>
+<html><head>
         <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;display=swap" rel="stylesheet">
         <title>Purasu Games</title>
         <style>
+#pageContent{
+
+}
 *{
  margin: 0px;
 }
 
 #headImage{
 	width: 100%;
-	height: 25%;
+	margin: 50px 0px 0px 0px;
 }
 nav{
+	position: fixed;
 	padding:0px;
   background-color: #1D1D1D;
   height: 70px;
   margin: 0px;
   width: 100%;
+  top:0px;
 }
 .bar{
   padding: 3px;
@@ -73,14 +77,17 @@ h1{
         </head>
         <body>
            <header>
-                   <img id="headImage" src="https://raw.githubusercontent.com/Purasu-Games/Purasu-Games/main/justLogo.png">
+                   
             <nav >
                 <a href="" class="bar" id="marginE">Home</a>
                 <a href="" class="bar">Log In</a>
 				<a href="" class="bar">More Info</a>
+				<a href="" class="bar">Catalog</a>
                 <input placeholder="search" id="searchBar"> 
              </nav>
          </header> 
+		 <div id="pageContent">
+			<img id="headImage" src="https://raw.githubusercontent.com/Purasu-Games/Purasu-Games/main/justLogo.png">
                  <div class="gameRowOne"> 
                       <div class="gametileblock">
                       
@@ -94,6 +101,7 @@ h1{
                       
                       
                 </div>
-        
+				
+        </div>
 </body>
 </html>
