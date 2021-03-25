@@ -125,17 +125,17 @@ function Gameover() {
 image2.style = "transform: translate(" + centerw + ", " + centery + "); display:none;";
 image.style = "transform: translate(" + centerw + ", " + centery + "); display:none;";
 
-title.style = " color: black; display:block; margin:0; width: 160px;";
+title.style = " color: red; display:block; margin:0; width: 160px;";
 var titleWidth = title.clientWidth;
 titleWidth = bodyw/2 - titleWidth/2 + 'px';
 title.innerHTML = "Game Over";
-title.style = "transform: translate(" + titleWidth + ", " + centery + "); color: black; display:block; margin:0; width: 160px;";
+title.style = "transform: translate(" + titleWidth + ", " + centery + "); color: red; display:block; margin:0; width: 160px;";
 
-menu.style = "transform: translate(" + okay + ", " + centery + "); color: royalblue; display:block; width:150px; margin:0;";
+menu.style = "transform: translate(" + okay + ", " + centery + "); color: blue; display:block; width:150px; margin:0;";
 var okay = menu.clientWidth;
 var okay =  bodyw/2 - okay/2 + 'px';
-menu.style = "transform: translate(" + okay + ", " + centery + "); color: royalblue; display:block; width:150px; margin:0;";
-retry.style = "transform: translate(" + okay + ", " + centery + "); color: Purple; display:block; width:150px; margin:0;";
+menu.style = "transform: translate(" + okay + ", " + centery + "); color: blue; display:block; width:150px; margin:0;";
+retry.style = "transform: translate(" + okay + ", " + centery + "); color: yellow; display:block; width:150px; margin:0;";
 
 console.log(bnWidthCombinedMinusCenter)
 console.log(bodyw/2)
