@@ -128,7 +128,7 @@ image.style = "transform: translate(" + centerw + ", " + centery + "); display:n
 title.style = " color: red; display:block; margin:0; width: 160px;";
 var titleWidth = title.clientWidth;
 titleWidth = bodyw/2 - titleWidth/2 + 'px';
-title.innerHTML = "Game Over";
+title.innerHTML = "Gameover";
 title.style = "transform: translate(" + titleWidth + ", " + centery + "); color: red; display:block; margin:0; width: 160px;";
 
 menu.style = "transform: translate(" + okay + ", " + centery + "); color: blue; display:block; width:150px; margin:0;";
