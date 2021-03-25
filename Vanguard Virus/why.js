@@ -23,26 +23,26 @@ var menu = gameOverDiv.children.namedItem('menu');
 
 console.log(bodyw)
 console.log(imageh + ' ' + bodyw + ' ' + bodyh + ' ' + imagew)
-const bnJacobs = div.children.namedItem('Jacobs');
-const bnBaby = div.children.namedItem('Baby');
+const bnInfected = div.children.namedItem('Infected');
 const bnEasy = div.children.namedItem('Easy');
-const bnDifficult = div.children.namedItem('Difficult');
+const bnNormal = div.children.namedItem('Normal');
+const bnHard = div.children.namedItem('Hard');
 const bnImpossible = div.children.namedItem('Impossible');
 // lower case bn means it's a button
 
-const bnWidthCombined = bnJacobs.clientWidth + bnBaby.clientWidth + bnEasy.clientWidth + bnDifficult.clientWidth + bnImpossible.clientWidth;
-const bnWidthCombinedMinusCenter = centerw - bnWidthCombined/3 + 'px';
-var titleWidthMath = title.clientWidth/2.4 + 'px';
+const bnWidthCombined = bnInfected.clientWidth + bnEasy.clientWidth + bnNormal.clientWidth + bnHard.clientWidth + bnImpossible.clientWidth;
+const bnWidthCombinedMinusCenter = centerw - bnWidthCombined/3.4 + 'px';
+var titleWidthMath = title.clientWidth/3 + 'px';
 
-div.children.namedItem('Jacobs').style = "transform: translate(" + bnWidthCombinedMinusCenter + ", " + centery + "); color: teal;";
-div.children.namedItem('Baby').style = "transform: translate(" + bnWidthCombinedMinusCenter + ", " + centery + "); color: royalblue;";
-div.children.namedItem('Easy').style = "transform: translate(" + bnWidthCombinedMinusCenter + ", " + centery + "); color: seagreen;";
-div.children.namedItem('Difficult').style = "transform: translate(" + bnWidthCombinedMinusCenter + ", " + centery + "); color: chocolate; ";
+div.children.namedItem('Infected').style = "transform: translate(" + bnWidthCombinedMinusCenter + ", " + centery + "); color: purple;";
+div.children.namedItem('Easy').style = "transform: translate(" + bnWidthCombinedMinusCenter + ", " + centery + "); color: royalblue;";
+div.children.namedItem('Normal').style = "transform: translate(" + bnWidthCombinedMinusCenter + ", " + centery + "); color: seagreen;";
+div.children.namedItem('Hard').style = "transform: translate(" + bnWidthCombinedMinusCenter + ", " + centery + "); color: orange; ";
 div.children.namedItem('Impossible').style = "transform: translate(" + bnWidthCombinedMinusCenter + ", " + centery + "); color: crimson; ";
 title.style = "transform: translate(" + titleWidthMath + ", " + centery + "); color: brown; ";
 
 menu.style = "transform: translate(" + bnWidthCombinedMinusCenter + ", " + centery + "); color: royalblue; display:none;";
-retry.style = "transform: translate(" + bnWidthCombinedMinusCenter + ", " + centery + "); color: teal; display:none;";
+retry.style = "transform: translate(" + bnWidthCombinedMinusCenter + ", " + centery + "); color: purple; display:none;";
 //My child is ALIVE!
 image2.src = "toxicvader.png";
 document.body.appendChild(image2);
@@ -61,11 +61,11 @@ function Reset() {
     audio3.play()
     title.style = 'display:none;';
     menu.style = "transform: translate(" + bnWidthCombinedMinusCenter + ", " + centery + "); color: royalblue; display:none;";
-    retry.style = "transform: translate(" + bnWidthCombinedMinusCenter + ", " + centery + "); color: teal; display:none;";
+    retry.style = "transform: translate(" + bnWidthCombinedMinusCenter + ", " + centery + "); color: purple; display:none;";
     document.getElementById("demo").innerHTML = "score: " + score;
 }
 
-function Jacobs(params){
+function Infected(params){
     Gamemode = 1000;
     image2.style ="display:block; transform: translate(" + centerw + ", " + centery + ");"
     image.style ="display:block; transform: translate(" + centerw + ", " + centery + ");"
@@ -75,7 +75,7 @@ function Jacobs(params){
     jacobsmode = true;
 }
 
-function Baby(params){
+function Easy(params){
     Gamemode = 1300;
     image.style ="display:block; transform: translate(" + centerw + ", " + centery + ");"
     div.style ="display:none;"
@@ -83,7 +83,7 @@ function Baby(params){
     title.style = 'display:none;';
 }
 
-function Easy(params) {
+function Normal(params) {
     Gamemode = 1000;
     image.style ="display:block; transform: translate(" + centerw + ", " + centery + ");"
     div.style ="display:none;"
@@ -91,7 +91,7 @@ function Easy(params) {
     title.style = 'display:none;';
 }
 
-function Difficult(params) {
+function Hard(params) {
     Gamemode = 750;
     image.style ="display:block; transform: translate(" + centerw + ", " + centery + ");"
     div.style ="display:none;"
@@ -128,14 +128,14 @@ image.style = "transform: translate(" + centerw + ", " + centery + "); display:n
 title.style = " color: black; display:block; margin:0; width: 160px;";
 var titleWidth = title.clientWidth;
 titleWidth = bodyw/2 - titleWidth/2 + 'px';
-title.innerHTML = "GameOver";
+title.innerHTML = "Game Over";
 title.style = "transform: translate(" + titleWidth + ", " + centery + "); color: black; display:block; margin:0; width: 160px;";
 
 menu.style = "transform: translate(" + okay + ", " + centery + "); color: royalblue; display:block; width:150px; margin:0;";
 var okay = menu.clientWidth;
 var okay =  bodyw/2 - okay/2 + 'px';
 menu.style = "transform: translate(" + okay + ", " + centery + "); color: royalblue; display:block; width:150px; margin:0;";
-retry.style = "transform: translate(" + okay + ", " + centery + "); color: teal; display:block; width:150px; margin:0;";
+retry.style = "transform: translate(" + okay + ", " + centery + "); color: Purple; display:block; width:150px; margin:0;";
 
 console.log(bnWidthCombinedMinusCenter)
 console.log(bodyw/2)
@@ -158,7 +158,7 @@ function tens(params) {
 
 
 function clicked() { 
-    if (jacobsmode == true) {
+    if (Infected == true) {
     tens(2)
     score = score + 1;
     document.getElementById("demo").innerHTML = "score: " + score;
@@ -196,7 +196,7 @@ function clicked() {
     })
 
     }
-   if (jacobsmode == false) {
+   if (infected == false) {
        tens(2)
     score = score + 1;
     document.getElementById("demo").innerHTML = "score: " + score;
