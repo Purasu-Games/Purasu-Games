@@ -1,1 +1,5 @@
-www.purasugames.com
+$ dig www.purasugames.com +nostats +nocomments +nocmd
+> ;www.purasugames.com.     IN     A
+> www.purasugames.com.     3592     IN     CNAME     Purasu-Games.github.io.
+> Purasu-Games.github.io.     43192     IN     CNAME     https://purasu-games.github.io/Purasu-Games/
+> https://purasu-games.github.io/Purasu-Games/     22     IN     A     192.0.2.1
