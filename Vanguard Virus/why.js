@@ -44,7 +44,7 @@ title.style = "transform: translate(" + titleWidthMath + ", " + centery + "); co
 menu.style = "transform: translate(" + bnWidthCombinedMinusCenter + ", " + centery + "); color: royalblue; display:none;";
 retry.style = "transform: translate(" + bnWidthCombinedMinusCenter + ", " + centery + "); color: teal; display:none;";
 //My child is ALIVE!
-image2.src = "fake.jpg";
+image2.src = "toxicvader.png";
 document.body.appendChild(image2);
 
 
